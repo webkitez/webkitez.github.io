@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+        appId: "b1509f3a-ca40-4421-92ec-3c9a794c8fc6",
+        autoRegister: false,
+        notifyButton: {
+         enable: true /* Set to false to hide */
+        }
+        }]);
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -157,12 +169,6 @@
     <aside class="callout">
         <div class="text-vertical-center">
             <h1>Vertically Centered Text</h1>
-            <form action="https://formspree.io/your@email.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form>
         </div>
     </aside>
 
